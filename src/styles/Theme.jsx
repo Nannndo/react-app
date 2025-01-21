@@ -33,20 +33,20 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
-    metalDark:" #7f8c8d",
+    metalDark: " #7f8c8d",
     primary: "#F83600",
     secondary: "#FE8C00",
 
     // Default colors
-    primaryC:' #2ecc71',
-    secundaryC:' #ecf0f1',
-    danger:' #f37272',
-    light:'  #ecf0f1',
-    dark:' #233240',
-    background:' #191919',
-    container:' #2d2d2d',
-    text:' #ffffff',
-    link:' #3498db'
+    primaryC: ' #2ecc71',
+    secundaryC: ' #ecf0f1',
+    danger: ' #f37272',
+    light: '  #ecf0f1',
+    dark: ' #233240',
+    background: ' #191919',
+    container: ' #2d2d2d',
+    text: ' #ffffff',
+    link: ' #3498db'
   },
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
