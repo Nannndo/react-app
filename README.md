@@ -14,3 +14,5 @@ O objetivo deste projeto é aprender como interagir com APIs públicas, especifi
 - **CSS** para estilização 🎨
 
 ## 🚀 Como Rodar
+
+git clone https://github.com/Nannndo/react-app.git
