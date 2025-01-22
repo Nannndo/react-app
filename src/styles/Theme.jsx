@@ -52,6 +52,14 @@ export const theme = {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
     sans: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
     mono: ["IBM Plex Mono", "serif"].join(","),
+    
+  },
+  fontSizes: {
+    small: '.8rem',
+    normal: '1rem',
+    large: '1.2rem',
+    title: '1.3rem',
+    subtitle: '1.25rem',
   },
   fontSize: {
     xs: rem(10),
