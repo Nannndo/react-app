@@ -44,6 +44,7 @@ export const theme = {
     light: '  #ecf0f1',
     dark: ' #233240',
     background: ' #191919',
+    champagneDark: '#bdc3c7',
     container: ' #2d2d2d',
     text: ' #ffffff',
     link: ' #3498db'
@@ -52,7 +53,7 @@ export const theme = {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
     sans: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
     mono: ["IBM Plex Mono", "serif"].join(","),
-    
+
   },
   fontSizes: {
     small: '.8rem',
