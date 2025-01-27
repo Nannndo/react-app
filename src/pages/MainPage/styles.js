@@ -53,7 +53,7 @@ export const Button = styled(Link)`
   color: #ffffff;
   height: 64px;
   border: 3px solid ${(props) => props.theme.colors.text};
-  transiction: background 0.3s;
+  transition: background 0.3s;
 
   &:hover {
     background: ${(props) => props.theme.colors.container};

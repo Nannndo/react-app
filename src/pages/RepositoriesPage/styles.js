@@ -20,16 +20,15 @@ export const Sidebar = styled.aside`
 export const Main = styled.section`
   background: ${(props) => props.theme.colors.container};
   width: 100%;
-   color:  ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text};
   height: 100vh;
   padding: 40px;
   overflow-y: hidden;
 
-   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
-   height: 100%;
-
-   @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
-   padding: 40px 20px;
-
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    height: 100%;
+  }
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    padding: 40px 20px;
   }
 `;
