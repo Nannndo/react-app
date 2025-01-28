@@ -1,20 +1,15 @@
+/* eslint-disable array-callback-return */
 import React from "react";
-
+import PropTypes from "prop-types";
 import { Container, Selector, Cleaner } from './styles'
 
-function Filter() {
-
-    const langs = [
-        { name: 'JavaScript', count: 5, color: ' #f1c40f' },
-        { name: 'HTML', count: 6, color: ' #f37272' },
-        { name: 'PHP', count: 1, color: ' #7f8c8d' },
-        { name: 'NodeJS', count: 5, color: '#2ecc71' },
-        { name: 'React', count: 5, color: ' #3498db' },
-    ];
-
-    const selectors = langs.map(({ name, count, color }) => (
-        <Selector key={name.toLowerCase()}
+function Filter({ languages, currentLanguage, onClick }) {
+    const selectors = languages.map(({ name, count, color }) => (
+        <Selector
+            key={name.toLowerCase()}
             color={color}
+            className={currentLanguage === name ? 'selected' : ''}
+            onClick={() => onClick && onClick(name)}
         >
             <span>{name}</span>
             <span>{count}</span>
@@ -25,12 +20,26 @@ function Filter() {
     return (
         <Container>
             {selectors}
-            <Cleaner>
-                Limpar
-            </Cleaner>
+            <Cleaner onClick={() => onClick && onClick(undefined)}>Limpar</Cleaner>
         </Container>
 
     )
 
 }
+Filter.defaultProps = {
+    currentLanguage: null,
+    onClick: null,
+}
+Filter.propTypes = {
+    languages: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            count: PropTypes.number.isRequired,
+            color: PropTypes.string,
+        }).isRequired
+    ).isRequired,
+    currentLanguage: PropTypes.string,
+    onClick: PropTypes.func,
+}
+
 export default Filter;
