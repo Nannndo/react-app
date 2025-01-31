@@ -6,8 +6,12 @@ import MainPage from "./pages/MainPage";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/repositories" element={<RepositoriesPage />} />
-      <Route path="/" element={<MainPage />} />
+      <Route path="/:login/repositories" element={<RepositoriesPage />} />
+      <Route path="/" element={<MainPage />
+      }
+      />
+
+
     </Routes>
 
   );
