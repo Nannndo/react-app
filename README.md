@@ -12,6 +12,7 @@ O objetivo deste projeto é aprender como interagir com APIs públicas, especifi
 - **GitHub API** 🖥️
 - **Axios** para requisições HTTP 🌐
 - **CSS** para estilização 🎨
+- **Json-Server** para simular uma API 🖥️
 
 ## 🚀 Como Rodar
 
